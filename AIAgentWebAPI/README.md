@@ -92,6 +92,6 @@ When AI support is included, the application also exposes OpenAI-compatible Resp
 
 ## Template source and license
 
-For installation instructions, generation options, and contributions, see the [template repository](https://github.com/infowaddy/AIAgentWebAPIWithScalarAndSerilog).
+For installation instructions, generation options, and contributions, see the [template repository](https://github.com/infowaddy/AIAgentWebAPIProjectTemplateWithScalarAndSerilog).
 
 Released under the MIT License; see `LICENSE.txt`.
