@@ -6,7 +6,7 @@ This is a community project maintained by Zin Min, not an official Microsoft tem
 
 - **NuGet package ID:** `AIAgentWebAPIWithScalarAndSerilog.Templates`
 - **Template command:** `aiagent-webapi-scalarandserilog`
-- **Source and issues:** [GitHub repository](https://github.com/infowaddy/AIAgentWebAPIWithScalarAndSerilog)
+- **Source and issues:** [GitHub repository](https://github.com/infowaddy/AIAgentWebAPIProjectTemplateWithScalarAndSerilog)
 
 ## Features
 
@@ -130,6 +130,6 @@ dotnet new uninstall AIAgentWebAPIWithScalarAndSerilog.Templates
 
 ## Contributing and license
 
-Report issues and propose improvements through [GitHub issues](https://github.com/infowaddy/AIAgentWebAPIWithScalarAndSerilog/issues). When changing template behavior, verify generated projects with the affected feature switches enabled and disabled.
+Report issues and propose improvements through [GitHub issues](https://github.com/infowaddy/AIAgentWebAPIProjectTemplateWithScalarAndSerilog/issues). When changing template behavior, verify generated projects with the affected feature switches enabled and disabled.
 
-Released under the [MIT License](https://github.com/infowaddy/AIAgentWebAPIWithScalarAndSerilog/blob/main/LICENSE.txt). Copyright (c) 2026 ZIN MIN.
+Released under the [MIT License](https://github.com/infowaddy/AIAgentWebAPIProjectTemplateWithScalarAndSerilog/blob/master/LICENSE.txt). Copyright (c) 2026 ZIN MIN.
