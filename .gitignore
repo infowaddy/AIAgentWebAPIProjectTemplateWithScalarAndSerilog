@@ -361,3 +361,13 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+# Local editor settings and AI service configuration
+.idea/
+.vscode/
+.env
+.env.*
+secrets.json
+appsettings.[Ll]ocal.json
+appsettings.*.[Ll]ocal.json
+*.p12
+*.key

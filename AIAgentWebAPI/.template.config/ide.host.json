@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json.schemastore.org/vs-2017.3.host",
+  "icon": "icon.png",
+  "symbolInfo": [
+    {
+      "id": "EnableSerilog",
+      "name": { "text": "Enable Serilog" },
+      "isVisible": true
+    },
+    {
+      "id": "EnableScalar",
+      "name": { "text": "Enable Scalar" },
+      "isVisible": true
+    },
+	{
+      "id": "SetupOpenAIAgents",
+      "name": { "text": "Setup OpenAI Agents" },
+      "isVisible": "true"
+    },
+    {
+      "id": "SetupDevUI",
+      "name": { "text": "Setup Dev UI (requires OpenAI Agents)" },
+      "isVisible": "true"
+    }
+  ]
+}

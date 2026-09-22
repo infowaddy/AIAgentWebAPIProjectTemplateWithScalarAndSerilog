@@ -7,9 +7,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    
+    
+    
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.12" />
-    <PackageReference Include="Scalar.AspNetCore" Version="2.17.3" />
+    
+    <!--#if (EnableScalar) -->
+    <PackageReference Include="Scalar.AspNetCore" Version="2.17.4" />
+    <!--#endif -->
+    <!--#if (EnableSerilog) -->
     <PackageReference Include="Serilog.AspNetCore" Version="10.0.0" />
+    <!--#endif -->
+    <!--#if (SetupOpenAIAgents) -->
+    <PackageReference Include="Microsoft.Agents.AI" Version="1.21.0" />    
+    <PackageReference Include="Microsoft.Agents.AI.Hosting" Version="1.21.0-preview.260911.1" />
+    <PackageReference Include="Microsoft.Agents.AI.Hosting.OpenAI" Version="1.21.0-alpha.260911.1" />
+    <PackageReference Include="Microsoft.Agents.AI.OpenAI" Version="1.21.0" />
+    <PackageReference Include="Microsoft.Agents.AI.Workflows" Version="1.21.0" />
+    <!--#endif -->
+    <!--#if (SetupDevUI) -->
+    <PackageReference Include="Microsoft.Agents.AI.DevUI" Version="1.21.0-preview.260911.1" />
+    <!--#endif -->
   </ItemGroup>
 
 </Project>

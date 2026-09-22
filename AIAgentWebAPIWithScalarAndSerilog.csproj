@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>AIAgentWebAPIWithScalarAndSerilog.Templates</PackageId>
+    <PackageVersion>1.0</PackageVersion>
+    <Title>AI Agent WebAPI Project Template (With Scalar and Serilog)</Title>
+    <Authors>Zin Min (zinmin@hotmail.com)</Authors>
+    <Description>Microsoft AI Agent Web API Project Template with Scalar and Serilog</Description>
+    <PackageTags>AI;AI Agent;Workflow;ASP.NET;Web API;C#;Template;Service</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageType>Template</PackageType>
+    <TargetFramework>net10.0</TargetFramework>
+    <NoBuild>true</NoBuild>
+    <IncludeContentInPack>true</IncludeContentInPack>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <ContentTargetFolders>content</ContentTargetFolders>
+    <NoWarn>$(NoWarn);NU5128</NoWarn>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+    <PackageOutputPath>$(MSBuildThisFileDirectory)</PackageOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Package source and template metadata, excluding local state and generated files. -->
+    <Content Include="AIAgentWebAPI\**\*"
+             Exclude="AIAgentWebAPI\**\bin\**;
+                      AIAgentWebAPI\**\obj\**;
+                      AIAgentWebAPI\**\Logs\**;
+                      AIAgentWebAPI\**\log\**;
+                      AIAgentWebAPI\**\.vs\**;
+                      AIAgentWebAPI\**\.vscode\**;
+                      AIAgentWebAPI\**\.idea\**;
+                      AIAgentWebAPI\**\.git\**;
+                      AIAgentWebAPI\**\artifacts\**;
+                      AIAgentWebAPI\**\TestResults\**;
+                      AIAgentWebAPI\**\*.user;
+                      AIAgentWebAPI\**\*.suo;
+                      AIAgentWebAPI\**\*.rsuser;
+                      AIAgentWebAPI\**\*.userosscache;
+                      AIAgentWebAPI\**\*.sln.docstates;
+                      AIAgentWebAPI\**\*.userprefs;
+                      AIAgentWebAPI\**\*.log;
+                      AIAgentWebAPI\**\*.nupkg;
+                      AIAgentWebAPI\**\*.snupkg;
+                      AIAgentWebAPI\**\.env;
+                      AIAgentWebAPI\**\.env.*;
+                      AIAgentWebAPI\**\secrets.json;
+                      AIAgentWebAPI\**\appsettings.Local.json;
+                      AIAgentWebAPI\**\appsettings.*.Local.json;
+                      AIAgentWebAPI\**\*.pfx;
+                      AIAgentWebAPI\**\*.p12;
+                      AIAgentWebAPI\**\*.key;
+                      AIAgentWebAPI\**\*.pubxml;
+                      AIAgentWebAPI\**\*.publishsettings" />
+    <!-- The NuGet package page uses the repository README at the package root. -->
+    <None Update="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,59 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "zinmin@hotmail.com",
+  "identity": "AI Agent WebAPI with Scalar and Serilog",
+  "name": "AI Agent WebAPI (with Scalar and Serilog)",
+  "description": "Microsoft AI Agent WebAPI Project Template with Scalar and Serilog. Sample source codes for AI Agents and Workflow creation are based on the OpenAI Responses Endpoint Urls.",
+  "shortName": "aiagent-webapi-scalarandserilog",
+  "sourceName": "AIAgentWebAPI",
+  "defaultName": "AIAgentWebAPIWithScalarAndSerilog",
+  "preferNameDirectory": true,
+  "classifications": [ "Web", "Web API", "Service", "AI", "Agent", "Workflow" ],
+  "tags": {
+    "language": "C#",
+    "type": "project",
+    "vs_showParametersByDefault": "false"
+  },
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "datatype": "choice",
+      "description": "Target framework",
+      "choices": [
+        {
+          "choice": "net10.0",
+          "description": ".NET 10.0"
+        }
+      ],
+      "defaultValue": "net10.0",
+      "replaces": "net10.0"
+    },
+    "EnableSerilog": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "true",
+      "description": "Write startup and application logs with Serilog."
+    },
+    "EnableScalar": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "true",
+      "description": "Use Scalar UI for API Reference."
+    },
+	"SetupOpenAIAgents": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "true",
+      "displayName": "Setup OpenAI Agents with Endpoint Urls",
+      "description": "Adds OpenAI Agents and Workflow with Responses Endpoint Urls"
+    },
+    "SetupDevUI": {
+      "type": "parameter",
+      "datatype": "bool",
+      "defaultValue": "true",
+      "displayName": "Setup Dev UI",
+      "description": "Requires 'Setup OpenAI Agents' to be enabled.",
+	  "isEnabled": "SetupOpenAIAgents == true"
+    }
+  }
+}
